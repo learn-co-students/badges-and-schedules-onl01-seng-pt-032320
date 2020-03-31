@@ -18,4 +18,10 @@ def assign_rooms(attendees)
   speaker_room
 end
 
+def printer(attendees)
+   badge_messages.each_line do |line| ""
+    end
+    printer
+end
+
 # Write your code here.
