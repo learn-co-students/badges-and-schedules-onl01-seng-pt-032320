@@ -19,9 +19,12 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-   badge_messages.each_line do |line| ""
+   batch_badge_creator(attendees).each do |attendee| 
+     puts attendee
     end
-    printer
+    assign_rooms(attendees).each do |index|
+    puts index
+  end
 end
 
 # Write your code here.
