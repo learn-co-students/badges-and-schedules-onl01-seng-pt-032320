@@ -19,14 +19,12 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  part_one = batch_badge_creator(attendees)
-  part_two = assign_rooms(attendees)
   
-  part_one.each do |first|
+  batch_badge_creator(attendees).each do |first|
     puts first
   end
   
-  part_two.each do |second|
+  assign_rooms(attendees).each do |second|
   puts second
 end
 end
